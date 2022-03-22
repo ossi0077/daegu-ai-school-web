@@ -16,9 +16,14 @@
         #maintitle{
             text-decoration: none;
             font-family: 'Hurricane', cursive;
+            color:inherit;
         }
-        #container{
+        #leftbar{
             background-color:goldenrod;
+        }
+        #item{
+            border: 3px solid blue;
+            padding: 10px;
         }
         @media all and (min-width: 1000px){
             #container{
@@ -48,15 +53,50 @@
 
     <div id="container">
         <div id="leftbar">
-            <div id="lefttitle"><strong>목차</strong></div>
+            <div id="lefttitle"><strong>index</strong></div>
             <ol>
             <li><a href="1.html">html</a></li>
             <li><a href="2.html">css</a></li>
             <li><a href="3.html">javascript</a></li>
             </ol>
         </div>
-        <div>
-            HTML is.....
+        <div id="item">
+            HTML 정리(순서는 뒤죽박죽임)<br>
+            <ul>
+                <li>
+                    &lt!DOCTYPE html&gt <br>
+                    - html 문서 작성시 가장 윗줄에 보편적으로 작성하며 현 문서가 HTML임을 알려주는 부분
+                </li>
+                
+                <li>
+                    &lthtml&gt '내용' &lt/html&gt<br>
+                    - !DOCTYPE html 작성후 뒤이어 작성하며 내용 부분에 head 및 body가 들어간다.
+                </li>
+                
+                <li>
+                    item
+                </li>
+                
+                <li>
+                    item
+                </li>
+                
+                <li>
+                    item
+                </li>
+                
+                <li>
+                    item
+                </li>
+                
+                <li>
+                    item
+                </li>
+                
+                <li>
+                    item
+                </li>
+            </ul>
         </div>
     </div>
 
