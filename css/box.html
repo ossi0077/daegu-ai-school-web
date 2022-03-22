@@ -1,0 +1,34 @@
+<!-- 박스모델을 배워보자 -->
+<html>
+    <head>
+        <style>
+            h1/* ,를 쓰면 여러개를 동시 지정 가능하다 */{
+                border/* 테두리설정하는 코드 */: 10px solid/* 실선 */ red;
+                padding:30px; /* 테두리와 텍스트간의 여백 설정 */
+                margin: 50px; /* 각각의 block 또는 inline 단위 별로 여백 설정 */
+                width: 100px;
+                height: 50px;
+                /* 브라우저로 열어서 F12눌러서 검사 눌러보면 다 확인 가능 */
+            }
+            /* h1,a{
+                display: inline;
+                display 함수로  inline, block 등등 설정을 변경할 수 있다.
+                block -> 화면 전체 사용
+                inline -> 컨텐츠 크기 만큼의 부피를 가짐
+                none -> 없앰
+            } */
+        </style>
+    </head>
+<body>
+    <!-- 
+        block level element(화면 전체단위 요소)=> ex) h1
+        inline element => ex) a, img
+        본문서를 열었을 시 붉은색으로 박스쳐진 부분을 보면 알 수 있음.
+        위와 같이 기본 크기가 있지만 css로 그 크기들을 다 바꿀 수 있음.
+     -->
+    <h1>WEB</h1>
+    <h1>WEB</h1>
+    Lorem ipsum dolor sit amet <a href="https//www.naver.com">consectetur</a> adipisicing elit.Quos provident assumenda eveniet dolore nam. Voluptatem ratione reprehenderit itaque necessitatibus consequatur? Sit asperiores aliquam nam quibusdam reiciendis ullam consequuntur esse architecto.
+    <!-- lorem clrh 탭을 누르면 의미없는 예제 택스트 문장이 나온다 -->
+</body>
+</html>
