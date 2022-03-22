@@ -1,2 +1,66 @@
-<h2>html</h2>
-html is......
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index page</title>
+    <meta charset="utf-8">
+    <style>
+        head,body{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80');
+        }
+        h1{
+            border-bottom: 10px solid red;
+            padding: 30px;
+        }
+        #maintitle{
+            text-decoration: none;
+            font-family: 'Hurricane', cursive;
+        }
+        #container{
+            background-color:goldenrod;
+        }
+        @media all and (min-width: 1000px){
+            #container{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }}
+        @media all and (max-width: 1000px) {
+        }
+        #leftbar{
+            border: 3px solid blue;
+        }
+        #lefttitle{
+            display: block;
+            border-bottom: 3px solid blue;
+            text-align: center;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <!-- 무료 구글폰트에서 위 세줄을 따온거고 13행으로 적용시켰음 -->
+</head>
+
+
+<body>
+    <h1><a href="index.html" id="maintitle">WEB</a></h1>
+
+    <div id="container">
+        <div id="leftbar">
+            <div id="lefttitle"><strong>목차</strong></div>
+            <ol>
+            <li><a href="1.html">html</a></li>
+            <li><a href="2.html">css</a></li>
+            <li><a href="3.html">javascript</a></li>
+            </ol>
+        </div>
+        <div>
+            HTML is.....
+        </div>
+    </div>
+
+    <div id="disqus_thread"></div>
+    
+</body>
+</html>
