@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index page</title>
+    <meta charset="utf-8">
+    <style>
+        h1{
+            border-bottom: 10px solid red;
+            padding: 30px;
+        }
+        #maintitle{
+            text-decoration: none;
+            color:inherit;
+            font-family: 'Hurricane', cursive;
+        }
+        /* #leftbar{
+            background-color:goldenrod;
+        } */
+        #item{
+            border: 3px solid blue;
+            padding: 10px;
+        }
+        @media all and (min-width: 1000px){
+            #container{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }}
+        @media all and (max-width: 1000px) {
+        }
+        #leftbar{
+            border: 3px solid blue;
+        }
+        #lefttitle{
+            display: block;
+            border-bottom: 3px solid blue;
+            text-align: center;
+        }
+        input{
+            margin: 10px;
+        }
+        
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <!-- 무료 구글폰트에서 위 세줄을 따온거고 13행으로 적용시켰음 -->
+</head>
+
+<!-- body 안에 스타일을 쓰고 따옴표 안에 css 속성 문법이 들어갈 수 있다! -->
+<!-- <body style="background-color: red;"></body> -->
+<!-- 콘솔에서 자바 스크립트 상 background-color를 하고 싶으면 -대신 c를 대문자 C로 한다. -->
+<body>
+        <h1><a href="index.html" id="maintitle">AI school - Oh seong sik</a></h1>
+
+    <input type="button" value="다크모드!" onclick="document.querySelector('body').style.color='white', document.querySelector('body').style.backgroundColor = 'black'">
+    <input type="button" value="원래대로!" onclick="document.querySelector('body').style.color='black', document.querySelector('body').style.backgroundColor = 'white'">
+    <div id="container">
+        <div id="leftbar">
+            <div id="lefttitle"><strong>index</strong></div>
+            <ol>
+            <li><a href="1.html">html</a></li>
+            <li><a href="2.html">css</a></li>
+            <li><a href="3.html">javascript</a></li>
+            </ol>
+        </div>
+        <div id="item">
+            <h2>Hello</h2>
+            <div id="introduce">
+                Welcome! This is OSS's WEB.<br>
+                <a href="https://github.com/ossi0077">Here</a> is my github address.<br>
+                This page is my history of studying the html.<br>
+                I wish comment your opinion! <br>
+                Thank you! <br>
+                <br><br><br><br><br>
+                This page was updated on 2022/03/22
+            </div>
+        </div>
+    </div>
+    <div id="disqus_thread"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- 변수를 배워보자! -->
+<html>
+<head></head>
+<body>
+    <!-- 변수는 데이터에 이름을 붙인 것! -->
+    <h1>Variable</h1>
+    <script>
+        // 변수 선언시 딱히 이유가 없으면 var을 붙여라!
+        var a=1;
+        a=2;
+        console.log(a);
+
+        // 1=2; 상수(constant)
+
+        //var과 let의 차이는? https://www.youtube.com/watch?v=61iolhWgQt0 이 링크 참고
+        let b=3;
+        b=4;
+        console.log(b);
+    </script>
+    <script>
+        //10000 : 가격
+        //0.1   : 부가가치세율
+        //위와 같이 주석을 달면 아래 코드의 의도를 이해할 수 있다.
+        console.log(10000*0.1);
+        
+
+        //아래와 같이 변수를 설정하면 주석이 필요가 없다!
+        let 가격=10000; let 부가가치세율=0.1;let 부가가치세=가격*부가가치세율
+        console.log(부가가치세);
+    </script>
+</body>
+</html>

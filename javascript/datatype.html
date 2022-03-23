@@ -5,10 +5,11 @@
 <body>
     <h1>Number</h1>
     <script>
+        document.write(1+1);
         console.log(1);     // 정수
         console.log(1.1);   // 실수
         
-        //Operator(연산자) 수행 예시 12-15
+        //Operator(연산자) 수행 예시
         console.log(1+1);   // 2
         console.log(2-1);   // 1
         console.log(2*2);   // 4
@@ -19,6 +20,25 @@
         console.log(Math.PI);
         console.log(Math.floor(1.9));
         console.log(Math.floor(Math.random()*100));
+    </script>
+
+    <h1>문자열(string)</h1>
+    <script>
+        // 시작과 끝이 같은 따옴표라야 한다!
+        console.log('작은따옴표');
+        console.log("큰따옴표");
+
+        // 코드상 줄바꾸는 방법
+        console.log('줄\
+        바꾸기!')
+        console.log(`줄 바꾸는데 좋은
+        따옴표? backtick!`);
+
+        console.log('몇글자이지?'.length); //글자수 알아내는법!
+        console.log('hell world'.replace('hell','hello')); //글자를 바꾸는 법!
+        //아래 두줄은 문자열을 결합해서 붙인다는 의미이다.
+        console.log('hello '+'world');
+        console.log('1'+'1');
     </script>
 </body>
 </html>
