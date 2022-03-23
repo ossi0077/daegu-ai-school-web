@@ -1,0 +1,32 @@
+<!-- javascript를 배워보자! -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        // 스크립트 태그 안에 자바 스크립트 코드를 넣는다고 보면 된다.
+        // alert() -> 알람창 띄우는 기능
+        // console.log() -> 브라우저 검사 창의 콘솔탭에 보면 로그 확인 가능
+        alert(1);
+        alert(2);
+        alert(3);
+        console.log(1);
+        console.log(2);
+        console.log(3);
+    </script>
+    1+1 <br>
+    <script>
+        // 자바스크립트는 html처럼 정해진 정적인게 아니라 이 문서를 실행할때마다 구현되는 동적인 부분이다.
+        // document.write('<태그>') 옆 내용으로 태그를 쓸 수 있다.
+        document.write(1+1);
+        document.write('<br>');
+        document.write(Math.random());
+    </script>
+    <br>
+    <!-- 아래 줄을 보고 버튼 구현 방법을 기억하자 -->
+    <input type="button" value="Hello" onclick="alert('clicked!')">
+</body>
+</html>
+<!-- html은 정보다. css는 디자인이다. javascript는 사용자와 상호작용한다. -->
