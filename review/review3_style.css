@@ -1,0 +1,14 @@
+/* review3 에 관한 별도의 css */
+h1{
+    border-bottom: 10px solid red;
+    /* !important를 사용하면 가장 우선순위가 된다. */
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* body{
+    background-image: url('https://picsum.photos/2560/1440');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */

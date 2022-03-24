@@ -3,45 +3,9 @@
 <head>
     <title>index page</title>
     <meta charset="utf-8">
-    <style>
-        head,body{
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url('https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80');
-        }
-        h1{
-            border-bottom: 10px solid red;
-            padding: 30px;
-        }
-        #maintitle{
-            text-decoration: none;
-            font-family: 'Hurricane', cursive;
-            color:inherit;
-        }
-        #leftbar{
-            background-color:goldenrod;
-        }
-        #item{
-            border: 3px solid blue;
-            padding: 10px;
-            color: white;
-        }
-        @media all and (min-width: 1000px){
-            #container{
-            display: grid;
-            grid-template-columns: 150px 1fr;
-        }}
-        @media all and (max-width: 1000px) {
-        }
-        #leftbar{
-            border: 3px solid blue;
-        }
-        #lefttitle{
-            display: block;
-            border-bottom: 3px solid blue;
-            text-align: center;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="index_style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
@@ -49,7 +13,7 @@
 </head>
 
 <body>
-    <h1><a href="index.html" id="maintitle">WEB</a></h1>
+    <h1><a href="index.html" id="maintitle">AI school - Oh seong sik</a></h1>
 
     <div id="container">
         <div id="leftbar">
@@ -64,7 +28,26 @@
             Studying JavaScript
             <ul>
                 <li>
-                    item
+                    언럭키 로그인 기능 테스트(ID : oss; 비밀번호 : sso) <br>
+                    <input type="button" value="ID 입력 버튼" onclick="
+                        let realID = 'oss';
+                        let realpwd = 'sso';
+                        let ID = prompt('ID 입력');
+                        if(ID===realID){
+                            alert('\''+ID+'\''+'확인. 확인버튼 클릭 후 비밀번호를 입력하세요.');
+                            let pwd = prompt('비밀번호 입력');
+                            if(pwd===realpwd){
+                                alert('올바른 pwd를 입력 하였습니다.');
+                            }
+                            else{
+                                alert('pwd가 올바르지 않습니다.');
+                            }
+                        }
+                        else{
+                            alert('등록된 ID가 아닙니다.')
+                        }
+
+                    ">
                 </li>
                 <br>
                 <li>
@@ -89,5 +72,23 @@
 
     <div id="disqus_thread"></div>
     
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://double-ss-first-page.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 </html>

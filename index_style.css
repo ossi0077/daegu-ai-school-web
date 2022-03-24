@@ -1,0 +1,45 @@
+/* 1,2,3.html 파일들을 이 css로 연동하자 */
+
+/* 스타일태그보다 인라인이 우선순위가 높다. 어제 다크모드 할때 스타일태그로 지정해놓은
+배경화면이 우선순위가 된 것이 아니라 확대해보면 배경화면 밑에 인라인 스타일이 깔려있다.
+다크모드는 background-color이고 배경은 background-image라서 어제처럼 보인듯 하다. */
+body{
+    /* head빼고 body만 적용해도 된다 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80');
+}
+h1{
+    border-bottom: 10px solid red;
+    padding: 30px;
+}
+#maintitle{
+    text-decoration: none;
+    color:inherit;
+    font-family: 'Hurricane', cursive;
+}
+#leftbar{
+    background-color:goldenrod;
+}
+#item{
+    border: 3px solid blue;
+    padding: 10px;
+}
+@media all and (min-width: 1000px){
+    #container{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}}
+@media all and (max-width: 1000px) {
+}
+#leftbar{
+    border: 3px solid blue;
+}
+#lefttitle{
+    display: block;
+    border-bottom: 3px solid blue;
+    text-align: center;
+}
+#introduce{
+    color: white;
+}

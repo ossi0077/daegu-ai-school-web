@@ -1,0 +1,37 @@
+<!-- 반복문을 배워보자 -->
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    for문 안에 변수를 var, let등 지정 안해도 되던데 상관없나?
+    <h1>array(배열)</h1>
+    <script>
+        // 배열 안의 각각의 값들은 element(요소), 각 요소의 번호는 index(색인)
+        let topics=['html','css','js'];
+        var members=['1','2','3'];
+        document.write(topics.length,'<br>');
+        document.write(topics[0],'<br>');
+    </script>
+
+    <h1>Loop</h1>
+    <script>
+        document.write(1,'<br>');
+        for(let i=0;i<3;i=i+1){
+            document.write(2,'<br>');
+        }
+        document.write(3,'<br>');
+    </script>
+
+    <h1>Array + Loop</h1>
+    <script>
+        var topics_1=['html', 'css', 'js'];
+        for(let i=0; i<topics_1.length; i=i+1){
+            document.write('i->',topics_1[i],'<br>');
+        }
+
+        for(let i=0; i<topics_1.length; i=i+1){
+            document.write('<li>'+topics[i]+'</li>');
+        }
+    </script>
+</body>
+</html>

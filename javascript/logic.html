@@ -1,0 +1,40 @@
+<!-- logic, 조건문을 배워보자 -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Boolean</h1>
+    <!-- Boolean 데이터형은 true, false 두가지의 값만 가진다 .
+    비교연산자, 논리연산자는 boolean 데이터형 연산자이다.-->
+    <script>
+        console.log(true);
+        console.log(false);
+        document.write(true,'<br>');
+        document.write(false);
+    </script>
+
+    <h1>Comparison Operator</h1>
+    <script>
+        document.write(1>1,'<br>');
+        // 부등호 3개는 엄격하게 전부 확실히 같은지 비교, 두개짜리는 예외적인 상황 발생 가능
+        // 그냥 3개짜리 쓸 것. 자세한 차이점은 서칭해볼 것.
+        document.write(1==1,'<br>');
+        document.write(1===1);
+    </script>
+
+    <h1>Conditional Statements(조건문)</h1>
+    <script>
+        // if문의 ()에는 boolean이 와야 함
+        document.write(1,'<br>');
+        if(true){
+            document.write(2,'<br>');
+        }
+        document.write(3,'<br>');
+
+        document.write(4,'<br>');
+        if(false){
+            document.write(5,'<br>');
+        }
+        document.write(6,'<br>');
+    </script>
+</body>
+</html>

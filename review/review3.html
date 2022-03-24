@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WEB</title>
+    <!-- 아래 줄은 css파일을 따로 빼서 적용할수 있는 코드이다. -->
+    <link rel="stylesheet" href="review3_style.css">
+</head>
+<!-- 스타일태그보다 인라인이 우선순위가 높다. 어제 다크모드 할때 스타일태그로 지정해놓은
+배경화면이 우선순위가 된 것이 아니라 확대해보면 배경화면 밑에 인라인 스타일이 깔려있다.
+다크모드는 background-color이고 배경은 background-image라서 어제처럼 보인듯 하다. -->
+<body>
+    <input type="button" value="night" onclick="
+    // 쿼리셀렉터는 css셀렉터값이 들어간다.
+    document.querySelector('body').style.backgroundColor='black'
+    document.querySelector('body').style.color='white'
+    ">
+    <input type="button" value="day" onclick="
+    // 쿼리셀렉터는 css셀렉터값이 들어간다.
+    document.querySelector('body').style.backgroundColor='white'
+    document.querySelector('body').style.color='black'
+    ">
+
+    <!-- 태그안에 코드를 짜면 인라인 방식 아래 주석 확인-->
+    <!-- <h1 style="border-bottom: 10px solid black;"></h1> -->
+    <h1 style="border-bottom: 10px solid black;"><a href="index.html">website</a></h1>
+    <div id="container">
+        <ul>
+            <li>
+                <a href="1.html">html</a>
+            </li>
+            <br>
+            <li>
+                <a href="2.html">css</a>
+            </li>
+            <br>
+            <li>
+                <a href="3.html">javascript</a>
+            </li>
+            <br>
+        </ul>
+        <div>
+            <h2>Welcome</h2>
+            Hello, Web!
+        </div>
+    </div>
+</body>
+</html>

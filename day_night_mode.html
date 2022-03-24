@@ -3,43 +3,8 @@
 <head>
     <title>index page</title>
     <meta charset="utf-8">
-    <style>
-        h1{
-            border-bottom: 10px solid red;
-            padding: 30px;
-        }
-        #maintitle{
-            text-decoration: none;
-            color:inherit;
-            font-family: 'Hurricane', cursive;
-        }
-        /* #leftbar{
-            background-color:goldenrod;
-        } */
-        #item{
-            border: 3px solid blue;
-            padding: 10px;
-        }
-        @media all and (min-width: 1000px){
-            #container{
-            display: grid;
-            grid-template-columns: 150px 1fr;
-        }}
-        @media all and (max-width: 1000px) {
-        }
-        #leftbar{
-            border: 3px solid blue;
-        }
-        #lefttitle{
-            display: block;
-            border-bottom: 3px solid blue;
-            text-align: center;
-        }
-        input{
-            margin: 10px;
-        }
-        
-    </style>
+    
+    <link rel="stylesheet" href="day_night_style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,17 +16,45 @@
 <!-- <body style="background-color: red;"></body> -->
 <!-- 콘솔에서 자바 스크립트 상 background-color를 하고 싶으면 -대신 c를 대문자 C로 한다. -->
 <body>
-        <h1><a href="index.html" id="maintitle">AI school - Oh seong sik</a></h1>
+    <h1 id="maintitle">AI school - Oh seong sik</h1>
+    <input type="button" value="home" onclick="location.href='index.html'">
+    <!-- 토글 버튼 만드는 코드 #container 위까지-->
+    <input id="darkbutton" type="button" value="dark" onclick="
+    // this는 이벤트를 발생시킨 태그를 지칭한다!
+    // let button_value=this; 와 let button_value=document.querySelector('#darkbutton').value;는 같음!
+    // 65, 70에 this 대신 id인 darkbutton넣어도 작동되므로 동치!
+    // document.querySelector('a')는 젤 처음 a태그 하나만 가져온다.
+    // -> querySelectorAll('a')를 쓰면 모든 a태그를 가져온다! 이게바로 배열
+    // 배열은 서로 연관된 데이터를 그룹화하여 이름붙인 것이다.
+    // 명령 === API
+    let button_value=this.value;
+    if(button_value==='dark'){
+            document.querySelector('body').style.color='white';
+            document.querySelector('body').style.backgroundColor='black';
+            document.getElementById('item').style.borderColor='yellow';
+            document.getElementById('leftbar').style.borderColor='yellow';
+            document.getElementById('lefttitle').style.borderColor='yellow';
+            document.getElementById('maintitle').style.borderColor='#AB9B96';
+            this.value='day';
+        }
+    else{
+            document.querySelector('body').style.color='black'
+            document.querySelector('body').style.backgroundColor='white'
+            document.getElementById('item').style.borderColor='blue';
+            document.getElementById('leftbar').style.borderColor='blue';
+            document.getElementById('lefttitle').style.borderColor='blue';
+            document.getElementById('maintitle').style.borderColor='red';
+            this.value='dark';
+        }
+    ">
 
-    <input type="button" value="다크모드!" onclick="document.querySelector('body').style.color='white', document.querySelector('body').style.backgroundColor = 'black'">
-    <input type="button" value="원래대로!" onclick="document.querySelector('body').style.color='black', document.querySelector('body').style.backgroundColor = 'white'">
     <div id="container">
         <div id="leftbar">
             <div id="lefttitle"><strong>index</strong></div>
             <ol>
-            <li><a href="1.html">html</a></li>
-            <li><a href="2.html">css</a></li>
-            <li><a href="3.html">javascript</a></li>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
             </ol>
         </div>
         <div id="item">
@@ -77,6 +70,5 @@
             </div>
         </div>
     </div>
-    <div id="disqus_thread"></div>
 </body>
 </html>
