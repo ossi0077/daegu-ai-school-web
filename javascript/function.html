@@ -1,0 +1,55 @@
+<!-- 함수를 배워보자 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+</head>
+<body>
+    <h1>function</h1>
+    <script>
+        function abc(){
+            console.log('a');
+            console.log('b');
+            console.log('c');
+        }
+        console.log(1);
+        console.log(2);
+        abc();
+        console.log(4);
+        abc();
+        console.log(5);
+        abc();
+        console.log(6);
+        abc();
+        console.log(7);
+        console.log(8);
+    </script>
+
+    <h1>VAT</h1>
+    <script>
+        function VAT(가격,부가세율=0.1){//정의부분에서()안의 가격, 부가세율의 경우 매개변수(parameter)라고 부른다.
+            let 부가세 = 가격*부가세율;
+            document.write(
+                `가격    : ${가격}<br>
+                부가세율 : ${부가세율}<br>
+                부가세   : ${부가세}`);
+            return 부가세;
+        }
+
+        
+        VAT(1000); //함수 ()안의 입력값을 인자(argument)라고 부른다.
+    </script>
+
+    <h1>SUM</h1>
+    <script>
+        
+        function sum(a,b){
+            return 합계 = a+b;
+            //return은 함수의 종료 조건으로 return뒤에 코드 작성시 실행되지 않는다.
+        }
+
+        document.write(sum(100,200)*10);
+    </script>
+</body>
+</html>

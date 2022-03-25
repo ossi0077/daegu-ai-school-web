@@ -1,0 +1,29 @@
+<!-- 객체 지향 스타트 -->
+<!-- 객체지향은 서로 연관된 변수와 함수를 그룹화하여 이름을 붙인 것이다. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Object</h1>
+    <script>
+        let student = ['a','b'];
+        document.write(student[0],'<br>',student[1]);
+
+        document.write('<br>');
+
+        //객체 지정할땐 중괄호로 감싸야 한다. 그리고 = 이아니라 : 사용.
+        let member={developer:'a',designer:'b'};
+        document.write(member.developer,'<br>',member.designer);
+
+        document.write('<br>');
+        let person = {name:'오성식', city:'대구', job:'개발자'};
+        document.write(person.name,'<br>',person.city,'<br>',person.job);
+        // document.write(person[0],'<br>',person[1],'<br>',person[2]); 이름을 지정하면 번호로 인덱스가 안되네?
+
+
+        //c.f)Math.random() 에서 Math는 객체이다.
+    </script>
+</body>
+</html>

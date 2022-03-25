@@ -9,42 +9,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
-    <!-- 무료 구글폰트에서 위 세줄을 따온거고 13행으로 적용시켰음 -->
+    <!-- 무료 구글폰트에서 위 세줄을 따온거고 sytle태그 안에 보면 적용되어 있음 -->
 </head>
 
 <!-- body 안에 스타일을 쓰고 따옴표 안에 css 속성 문법이 들어갈 수 있다! -->
 <!-- <body style="background-color: red;"></body> -->
 <!-- 콘솔에서 자바 스크립트 상 background-color를 하고 싶으면 -대신 c를 대문자 C로 한다. -->
 <body>
-    <h1 id="maintitle">AI school - Oh seong sik</h1>
-    <input type="button" value="home" onclick="location.href='index.html'">
-    <!-- 토글 버튼 만드는 코드 #container 위까지-->
-    <input id="darkbutton" type="button" value="dark" onclick="
-    // this는 이벤트를 발생시킨 태그를 지칭한다!
+    <script>
     // let button_value=this; 와 let button_value=document.querySelector('#darkbutton').value;는 같음!
-    // 65, 70에 this 대신 id인 darkbutton넣어도 작동되므로 동치!
     // document.querySelector('a')는 젤 처음 a태그 하나만 가져온다.
     // -> querySelectorAll('a')를 쓰면 모든 a태그를 가져온다! 이게바로 배열
     // 배열은 서로 연관된 데이터를 그룹화하여 이름붙인 것이다.
     // 명령 === API
-    let button_value=this.value;
-    if(button_value==='dark'){
+        function dark(){
             document.querySelector('body').style.color='white';
             document.querySelector('body').style.backgroundColor='black';
             document.getElementById('item').style.borderColor='yellow';
             document.getElementById('leftbar').style.borderColor='yellow';
             document.getElementById('lefttitle').style.borderColor='yellow';
             document.getElementById('maintitle').style.borderColor='#AB9B96';
-            this.value='day';
+            let hyper = document.querySelectorAll('a');
+            for(i=0;i<hyper.length;i++){
+                hyper[i].style.color='white'
+            }
         }
-    else{
+        function day(){
             document.querySelector('body').style.color='black'
             document.querySelector('body').style.backgroundColor='white'
             document.getElementById('item').style.borderColor='blue';
             document.getElementById('leftbar').style.borderColor='blue';
             document.getElementById('lefttitle').style.borderColor='blue';
             document.getElementById('maintitle').style.borderColor='red';
-            this.value='dark';
+            let hyper = document.querySelectorAll('a');
+            for(i=0;i<hyper.length;i++){
+                hyper[i].style.color='inherit'
+            }
+        }
+    </script>
+    <h1 id="maintitle"><a href="index.html">AI school - Oh seong sik</a></h1>
+    <input type="button" value="home" onclick="location.href='index.html'">
+    <!-- 토글 버튼 만드는 코드 #container 위까지. dark(), day()함수로
+        body의 최상단에 따로 빼놓았음.-->
+    <input id="darkbutton" type="button" value="dark" onclick="
+    // this는 이벤트를 발생시킨 태그를 지칭한다!
+    // 65, 70에 this 대신 id인 darkbutton넣어도 작동되므로 동치!
+    let button_value=this.value;
+    if(button_value==='dark'){
+        dark();
+        this.value='day';
+        }
+    else{
+        day();
+        this.value='dark';
         }
     ">
 
@@ -65,8 +82,6 @@
                 This page is my history of studying the html.<br>
                 I wish comment your opinion! <br>
                 Thank you! <br>
-                <br><br><br><br><br>
-                This page was updated on 2022/03/22
             </div>
         </div>
     </div>

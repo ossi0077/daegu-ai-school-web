@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index page</title>
+    <meta charset="utf-8">
+    
+    <link id="indexstyle" rel="stylesheet" href="index_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <!-- 무료 구글폰트에서 위 세줄을 따온거고 13행으로 적용시켰음 -->
+</head>
+
+<body>
+    <!-- 다크모드 낮모드 함수를 js파일로 따로 연결 -->
+    <script type="text/javascript" src="index_darkmode.js"></script>
+
+    <h1 id="maintitle_h1"><a href="index.html" id="maintitle">AI school - Oh seong sik</a></h1>
+
+    <!-- <input type="button" value="다크모드!" onclick="document.querySelector('body').style.color='white', document.querySelector('body').style.backgroundColor = 'black'">
+    <input type="button" value="원래대로!" onclick="document.querySelector('body').style.color='black', document.querySelector('body').style.backgroundColor = 'white'"> -->
+    <!-- 토글 버튼 만드는 코드 #container 위까지. dark_mode(), day_mode()함수로 body의 최상단에 따로 빼놓았음.-->
+    <input id="darkbutton" type="button" value="dark_mode" onclick="
+    // this는 이벤트를 발생시킨 태그를 지칭한다!
+    let button_value=this.value;
+    if(button_value==='dark_mode'){
+        dark_mode();
+        this.value='day_mode';
+        }
+    else{
+        day_mode();
+        this.value='dark_mode';
+        }
+    ">
+    <br><br>
+
+    <div id="container">
+        <div id="leftbar">
+            <div id="lefttitle"><strong>index</strong></div>
+            <ol>
+            <li><a id="1html" href="1.html">html</a></li>
+            <li><a href="2.html">css</a></li>
+            <li><a href="3.html">javascript</a></li>
+            </ol>
+        </div>
+        <div id="item">
+            Studying JavaScript
+            <ul>
+                <li>
+                    언럭키 로그인 기능 테스트(ID : oss; 비밀번호 : sso) <br>
+                    <input type="button" value="로그인 테스트 시작" onclick="
+                        let realID = 'oss';
+                        let realpwd = 'sso';
+                        let ID = prompt('ID 입력');
+                        if(ID===realID){
+                            alert('\''+ID+'\''+'확인. 확인버튼 클릭 후 비밀번호를 입력하세요.');
+                            let pwd = prompt('비밀번호 입력');
+                            if(pwd===realpwd){
+                                alert('올바른 pwd를 입력 하였습니다.');
+                            }
+                            else{
+                                alert('pwd가 올바르지 않습니다.');
+                            }
+                        }
+                        else{
+                            alert('등록된 ID가 아닙니다.')
+                        }
+
+                    ">
+                </li>
+                <br>
+                <li>
+                    item
+                </li>
+                <br>
+                <li>
+                    item
+                </li>
+                <br>
+                <li>
+                    item
+                </li>
+                <br>
+                <li>
+                    item
+                </li>
+                <br>
+            </ul>
+        </div>
+    </div>
+
+    <div id="disqus_thread"></div>
+    
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://double-ss-first-page.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+</html>

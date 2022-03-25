@@ -13,11 +13,12 @@ h1{
 }
 #maintitle{
     text-decoration: none;
-    color:inherit;
+    color:black;
     font-family: 'Hurricane', cursive;
 }
 #leftbar{
     background-color:goldenrod;
+    border: 3px solid blue;
 }
 #item{
     border: 3px solid blue;
@@ -29,9 +30,6 @@ h1{
     grid-template-columns: 150px 1fr;
 }}
 @media all and (max-width: 1000px) {
-}
-#leftbar{
-    border: 3px solid blue;
 }
 #lefttitle{
     display: block;

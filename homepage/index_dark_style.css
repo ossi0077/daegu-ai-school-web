@@ -1,0 +1,42 @@
+/* 스타일태그보다 인라인이 우선순위가 높다. 어제 다크모드 할때 스타일태그로 지정해놓은
+배경화면이 우선순위가 된 것이 아니라 확대해보면 배경화면 밑에 인라인 스타일이 깔려있다.
+다크모드는 background-color이고 배경은 background-image라서 어제처럼 보인듯 하다. */
+body{
+    color: white;
+    background-color: black;
+}
+h1{
+    border-bottom: 10px solid red;
+    padding: 30px;
+}
+#maintitle{
+    text-decoration: none;
+    color:black;
+    font-family: 'Hurricane', cursive;
+}
+#maintitle_h1{
+    border-color: #AB9B96;
+}
+#leftbar{
+    background-color:black;
+    border: 3px solid yellow;
+}
+#item{
+    border: 3px solid yellow;
+    padding: 10px;
+}
+@media all and (min-width: 1000px){
+    #container{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}}
+@media all and (max-width: 1000px) {
+}
+#lefttitle{
+    display: block;
+    border-bottom: 3px solid yellow;
+    text-align: center;
+}
+#introduce{
+    color: white;
+}
