@@ -1,5 +1,6 @@
 # 반복문을 배워보자
-members=['oss', 'spoon']
+print('\n')
+members=['oss', 'daegu']
 for member in members :
     print(f'member : {member}')
 
@@ -16,7 +17,7 @@ for member in members2 :
 
 
 #dictionary 실습
-oss = ['egoing','seoul','programmer']
+# oss = ['egoing','seoul','programmer']
 oss = {'name':'egoing','city':'seoul','job':'programmer'} #사전형
 print('\n')
 for item in oss:
@@ -32,3 +33,4 @@ members3 = [
 ]
 for member in members3 :
     print(member['name'])
+

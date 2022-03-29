@@ -136,5 +136,32 @@
         let byte = Number(prompt('몇 byte?'));
         alert(byte*8);
     ">
+
+    <h1>python to javascript</h1>
+    <script>
+        var ID_name, password, times;
+    times = [1, 2, 3];
+
+    for (var j, _pj_c = 0, _pj_a = times, _pj_b = _pj_a.length; _pj_c < _pj_b; _pj_c += 1) {
+        j = _pj_a[_pj_c];
+        ID_name = prompt("Input your ID_name : ");
+
+        if (ID_name === "oss") {
+            console.log("주인장 납시오!!");
+            password = prompt("Input your password : ");
+
+            if (password === "sso") {
+            console.log("주인장 맞네!");
+            console.log(`--${j}회 동작 끝--`);
+            } else {
+            console.log("뭐야 너 누구야");
+            console.log(`--${j}회 동작 끝--`);
+            }
+        }else {
+            console.log("손놈 납시오!!!");
+            console.log(`--${j}회 동작 끝--`);
+        }
+    }
+    </script>
 </body>
 </html>
