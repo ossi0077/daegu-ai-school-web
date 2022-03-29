@@ -1,0 +1,140 @@
+<html>
+<body>
+    <h1>program</h1>
+    <script>
+        console.log(1);
+        console.log(2);
+        console.log(3);
+    </script>
+    
+    <h1>Number</h1>
+    <script>
+        console.log(1);
+        console.log(2);
+        console.log(3);
+        console.log(1+1);
+        console.log(2-1);
+        console.log(2*2);
+        console.log(6/2);
+
+        // 3을 제곱하라는 뜻
+        console.log(Math.pow(3,2));
+    </script>
+
+    <h1>String</h1>
+    <script>
+        // 작은따옴표
+        console.log('Hello');
+        console.log("Hello");
+        console.log(`Hello
+        World
+        `);
+        console.log('hello'.length);
+        console.log('hell world'.replace('hell', 'hello'));
+
+    </script>
+
+    <h1>array</h1>
+    <script>
+        let member = ['a','b','c']
+
+    </script>
+
+    <h1>variable</h1>
+    <script>
+        let a=1;
+    </script>
+
+    <!-- <h1>Input</h1>
+    <script>
+        let 가격 = prompt('가격?');
+        let 부가가치세 = 0.1;
+        alert(가격*부가가치세);
+    </script> -->
+
+    <h1>boolean & comparison operator</h1>
+    <script>
+        console.log('\n');
+        console.log(true);
+        console.log(false);
+        console.log(1===1);//true
+        console.log(1===2);//false
+        console.log(1>2);//false
+        console.log(1<2);//true
+    </script>
+
+    <h1>conditional statements</h1>
+    <script>
+        console.log('\n');
+        console.log(1);
+        if(true){
+            console.log(2);
+            console.log(3);
+        }
+        console.log(4);
+        console.log('\n');
+        console.log(1);
+        if(true){
+            console.log(2.1);
+            console.log(3.1);
+        } else{
+            console.log(2.2);
+            console.log(3.3);
+        }
+        console.log(4);
+        console.log('\n');
+
+        console.log(1);
+        if(false){
+            console.log(2.1);
+            console.log(3.1);
+        } else{
+            console.log(2.2);
+            console.log(3.3);
+        }
+        console.log(4);
+    </script>
+
+    <h1>login</h1>
+    <input type="button" value="login" onclick="
+    let ID='oss';
+    if(ID===prompt('name?')){
+        alert('hello');
+    }
+    else{
+        alert('get out');
+    }
+    ">
+
+    <h1>loop</h1>
+    <script>
+        let loop_member = ['oss','duru'];
+        for(i=0;i<loop_member.length;i++){
+            document.write(`<li>${loop_member[i]}</li>`);
+            document.write('<br>')
+        }
+        members={name:'oss',job:'programmer'}
+    </script>
+
+    <h1>function</h1>
+    <script>
+        console.log('\n');
+        function sum(a,b){
+            return a+b;
+        }
+        console.log(sum(10,20));
+    </script>
+
+    <h1>실습</h1>
+    <input type="button" value="부가계산기" onclick="
+        let 가격 = Number(prompt('가격?'));
+        alert(가격 * 0.1);
+    ">
+
+    <h1>실습2</h1>
+    <input type="button" value="byte to bit" onclick="
+        let byte = Number(prompt('몇 byte?'));
+        alert(byte*8);
+    ">
+</body>
+</html>
